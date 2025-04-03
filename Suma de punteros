@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, suma;
+    int *ptr, *ptr2, *ptrSuma;
+    ptr = &num1;
+    ptr2 = &num2;
+    ptrSuma = &suma;
+    
+    printf("Bienvenido al programa de suma con punteros");
+    printf("Ingrese el primer valor\n");
+    scanf("%d", &num1);
+    printf("Ingrese el segundo valor\n");
+    scanf("%d", &num2);
+    *ptrSuma = *ptr + *ptr2;
+    printf("La suma total es: %d", suma);
+    return 0;
+}
